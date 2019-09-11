@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    <title>Week 12 - Web-Scraping-and-Document-Databases</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="header">
+            <div>
+                <p>{{text}}</p>
+                <button class="button_scrap" type="button"><a href="/scrape" role="button">Scrape New Data</a></button>
+            </div>
+        </section>
+        <!-- Mars News -->
+        <section class="mars_news">
+            <div>
+                <h2>Latest Mars News</h2>
+                <h4>{{mars.news_title}}</h4>
+                <p>{{mars.news_p}}</p>
+            </div>
+        </section>
+        <!-- End of Mars News -->
+
+        <!-- Mars Data -->
+        <section class="mars_data">
+            <div class="mars_image">
+                <h2>Featured Mars Image</h2>
+                <img src={{mars.featured_image_url}} alt="">
+            </div>
+            <div class="mars_facts">
+                <div>
+                    <h4>Current Weather on Mars</h4>
+                    <p>{{mars.mars_weather}}</p>
+                </div>
+                <div>
+                    <h4>Mars Facts</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th align="left">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in mars.html_table %}
+                            <tr>
+                                <td>{{item.key}} </td>
+                                <td>{{item.value}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- End of Mars Data -->
+
+        <!-- Mars Hemispheres -->
+        <section class="mars_hemis">
+            <h2>Mars Hemispheres</h2>
+            <div class="images">
+                {% for item in mars.hemisphere_image_urls %}
+                <div>
+                    <img src={{item.image_url}} alt="">
+                    <h4>{{item.title}}</h4>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
