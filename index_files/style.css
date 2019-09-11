@@ -1,0 +1,128 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    margin: 10px 20px 0px;
+}
+
+.wrapper{
+    display: grid;
+    /* background: lightgray; */
+}
+
+.header {
+    display: grid;
+    grid-auto-columns: 100%;
+    justify-items: center;
+    background: rgb(223, 231, 241);
+    margin: 0px;
+    padding: 40px 0px 50px;
+}
+
+.header button {
+    text-align: center;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgb(60, 93, 136);
+}
+
+.header a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.header div {
+    text-align: center;
+}
+
+.header p {
+    margin: 0px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mars_news {
+    display: grid;
+    grid-auto-columns: 100%;
+    /* justify-items: left; */
+}
+
+.mars_news h2, h4, p {
+    margin: 0px 0px 0px 0px;
+}
+
+.mars_data {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.mars_data .mars_image {
+    grid-column: 1/8;
+}
+
+.mars_image h2 {
+    margin: 0px 0px 0px 0px;
+}
+
+.mars_data .mars_facts {
+    grid-column: 8/11;
+    margin : 20px 0px 0px 20px;
+}
+
+.mars_facts div {
+    padding: 10px;
+    border: thick double #dcdedf;
+}
+
+.mars_facts h4 {
+    margin-bottom: 5px;
+}
+
+.mars_hemis {
+    display: grid;
+    grid-auto-columns: 100%;
+}
+
+.mars_hemis .images {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.images div {
+    padding: 5px;
+    border: 2px solid #dcdedf;
+    margin: 3px;
+}
+
+@media (max-width: 900px) {
+    .mars_data .mars_image {
+        grid-column: 1/11;
+    }
+
+    .mars_data .mars_facts {
+        grid-column: 1/11;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .mars_hemis .images {
+        grid-template-columns: 100%;
+    }
+}
