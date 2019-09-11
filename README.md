@@ -13,7 +13,7 @@ essay contest to name NASA's next Mars rover.
 Featured Mars Image
 -------------------
 
-![](./Week%2012%20-%20Web-Scraping-and-Document-Databases_files/PIA18049-1920x1200.jpg)
+![](./index_files/PIA18049-1920x1200.jpg)
 
 #### Current Weather on Mars
 
@@ -38,19 +38,19 @@ InSight sol 265 (2019-08-25) low -99.4ºC (-146.9ºF) high -26.3ºC
 Mars Hemispheres
 ----------------
 
-![](./Week%2012%20-%20Web-Scraping-and-Document-Databases_files/full.jpg)
+![](./index_files/full.jpg)
 
 #### Cerberus Hemisphere Enhanced
 
-![](./Week%2012%20-%20Web-Scraping-and-Document-Databases_files/full(1).jpg)
+![](./index_files/full(1).jpg)
 
 #### Schiaparelli Hemisphere Enhanced
 
-![](./Week%2012%20-%20Web-Scraping-and-Document-Databases_files/full(2).jpg)
+![](./index_files/full(2).jpg)
 
 #### Syrtis Major Hemisphere Enhanced
 
-![](./Week%2012%20-%20Web-Scraping-and-Document-Databases_files/full(3).jpg)
+![](./index_files/full(3).jpg)
 
 #### Valles Marineris Hemisphere Enhanced
 
