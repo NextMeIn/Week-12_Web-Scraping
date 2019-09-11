@@ -13,7 +13,7 @@ essay contest to name NASA's next Mars rover.
 Featured Mars Image
 -------------------
 
-![](./index_files/PIA18049-1920x1200.jpg)
+![](./index_files/PIA16029-1920x1200.jpg)
 
 #### Current Weather on Mars
 
